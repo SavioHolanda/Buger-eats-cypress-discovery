@@ -1,4 +1,4 @@
-name: Cypress Regression Test
+name: Cypress Regression Tests
 
 on: [push]
 
@@ -6,7 +6,7 @@ jobs:
 
   ui-chrome-tests:
     runs-on: ubuntu-latest
-    container: cypress/browser:node14.17.0-chrome88-ff89
+    container: cypress/browsers:node14.17.0-chrome88-ff89
     strategy:
       fail-fast: false
     steps:
@@ -21,7 +21,7 @@ jobs:
           wait-on-timeout: 120
           browser: chrome
           record: true
-          gruup: 'UI - Chrome'
+          group: 'UI - Chrome'
           spec: cypress/integrations/*
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
