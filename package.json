@@ -1,0 +1,19 @@
+{
+  "name": "buger-eats",
+  "version": "1.0.0",
+  "description": "Projeto de teste de aceitação do app BugerEats",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Savio Borges",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^9.3.1",
+    "cypress-file-upload": "^5.0.8",
+    "faker": "^6.6.6"
+  },
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001312"
+  }
+}
